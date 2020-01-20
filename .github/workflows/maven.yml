@@ -25,8 +25,8 @@ jobs:
       with:
         server<em>address: smtp.163.com
         server</em>port: 465
-        username: ${{ secrets.MAIL<em>USERNAME }}
-        password: ${{ secrets.MAIL</em>PASSWORD }}
+        username: ${{ secrets.MAIL_USERNAME }}
+        password: ${{ secrets.MAIL_PASSWORD }}
         subject: Shanghai Weather Report
         body: file://result.html
         to: yifeng.ruan@gmail.com
