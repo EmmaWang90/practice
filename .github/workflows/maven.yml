@@ -28,7 +28,6 @@ jobs:
         username: ${{ secrets.MAIL_USERNAME }}
         password: ${{ secrets.MAIL_PASSWORD }}
         subject: Shanghai Weather Report
-        body: file://result.html
         to: emmawang1990@outlook.com
         from: GitHub Actions
         content_type: text/html
