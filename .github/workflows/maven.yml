@@ -20,3 +20,15 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Send mail
+      uses: dawidd6/action-send-mail@master
+      with:
+        server<em>address: smtp.163.com
+        server</em>port: 465
+        username: ${{ secrets.MAIL<em>USERNAME }}
+        password: ${{ secrets.MAIL</em>PASSWORD }}
+        subject: Shanghai Weather Report
+        body: file://result.html
+        to: yifeng.ruan@gmail.com
+        from: GitHub Actions
+        content_type: text/html
